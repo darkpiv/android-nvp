@@ -41,10 +41,14 @@ object Libraries {
   const val lifeCycle = "androidx.lifecycle:lifecycle-extensions:2.1.0"
   const val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:2.1.0"
   const val navigationUIKtx = "androidx.navigation:navigation-ui-ktx:2.1.0"
-  const val koinCore = "org.koin:koin-core:${Versions.koin}"
-  const val koinScope = "org.koin:koin-androidx-scope:2.0.1"
-  const val koinVM = "org.koin:koin-androidx-viewmodel:2.0.1"
-  const val koinAndroidExt = "org.koin:koin-androidx-ext:2.0.1"
+
+  const val retrofit = "com.squareup.retrofit2:retrofit:2.6.1"
+  const val gsonAdatper = "com.squareup.retrofit2:converter-gson:2.6.2"
+
+  const val dagger2 = "com.google.dagger:dagger:2.24"
+  const val dagger2Anno = "com.google.dagger:dagger-compiler:2.24"
+  const val daggerAndroid = "com.google.dagger:dagger-android:2.24"
+  const val daggerAndroidAnno = "com.google.dagger:dagger-android-processor:2.24"
 }
 
 object TestLibraries {

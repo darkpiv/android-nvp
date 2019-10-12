@@ -17,7 +17,7 @@ android {
   }
   buildTypes {
     getByName("release") {
-      isMinifyEnabled = false
+      isMinifyEnabled = true
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
     }
   }
@@ -39,6 +39,16 @@ dependencies {
   implementation(Libraries.lifeCycle)
   implementation(Libraries.navigationFragmentKtx)
   implementation(Libraries.navigationUIKtx)
+
+  // network
+  implementation(Libraries.retrofit)
+  implementation(Libraries.gsonAdatper)
+
+  //dagger
+  implementation(Libraries.dagger2)
+  kapt(Libraries.dagger2Anno)
+  implementation(Libraries.daggerAndroid)
+  kapt(Libraries.daggerAndroidAnno)
 
   testImplementation(TestLibraries.junit4)
   androidTestImplementation(TestLibraries.testRunner)
