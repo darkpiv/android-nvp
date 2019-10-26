@@ -28,7 +28,6 @@ android {
 }
 
 dependencies {
-
   implementation(Libraries.kotlinStdLib)
   implementation(Libraries.appCompat)
   implementation(Libraries.ktxCore)
@@ -53,6 +52,11 @@ dependencies {
   testImplementation(TestLibraries.junit4)
   androidTestImplementation(TestLibraries.testRunner)
   androidTestImplementation(TestLibraries.espresso)
+
+  // UI
+  implementation(Libraries.lottie)
+
+  // image
+  implementation(Libraries.glide)
+  kapt(Libraries.glideProcessor)
 }
-
-

@@ -16,7 +16,7 @@ object BuildPlugins {
 }
 
 object AndroidSdk {
-  const val min = 15
+  const val min = 24
   const val compile = 28
   const val target = compile
 }
@@ -28,7 +28,7 @@ object Libraries {
     const val ktx = "1.1.0"
     const val ktx_varios = "2.1.0"
     const val material_ui = "1.0.0"
-    const val koin = "2.0.1"
+    const val lottieVersion = "3.1.0"
   }
 
   const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
@@ -49,6 +49,9 @@ object Libraries {
   const val dagger2Anno = "com.google.dagger:dagger-compiler:2.24"
   const val daggerAndroid = "com.google.dagger:dagger-android:2.24"
   const val daggerAndroidAnno = "com.google.dagger:dagger-android-processor:2.24"
+  const val lottie = "com.airbnb.android:lottie:${Versions.lottieVersion}"
+  const val glide = "com.github.bumptech.glide:glide:4.10.0"
+  const val glideProcessor = "com.github.bumptech.glide:compiler:4.10.0"
 }
 
 object TestLibraries {

@@ -2,9 +2,8 @@ package com.darkpiv.androidnvp.core
 
 import android.app.Application
 import android.content.Context
-import dagger.android.DaggerApplication
 
-class BaseApplication : DaggerApplication() {
+class BaseApplication : Application() {
 
   override fun onCreate() {
     super.onCreate()
