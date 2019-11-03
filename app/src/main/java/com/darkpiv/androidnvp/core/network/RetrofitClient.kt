@@ -1,10 +1,11 @@
 package com.darkpiv.androidnvp.core.network
 
 import com.darkpiv.androidnvp.model.ListSquadResponse
+import com.darkpiv.androidnvp.model.ListTaskOtableResponse
 import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.GET
+import retrofit2.http.*
 
 object RetrofitClient {
   val webservice by lazy {
@@ -18,6 +19,9 @@ object RetrofitClient {
 }
 
 interface ApiService {
-  @GET("alfred/project/list?userId=139")
-  suspend fun getListSquads(): ListSquadResponse
+  @GET("alfred/project/list")
+  suspend fun getListSquads(@Query("userId") userId: Int): ListSquadResponse
+
+  @POST("alfred/task/list")
+  suspend fun getListTaskOfProject(@Body listProjectIds: List<String>): ListTaskOtableResponse
 }
